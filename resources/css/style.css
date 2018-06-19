@@ -137,11 +137,13 @@ border: 1px solid red;
 }
 
 .hero h1{
-
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .hero span{
-
+  padding: 2rem 0;
 }
 
 .hero p{
@@ -152,7 +154,7 @@ border: 1px solid red;
   width: 40%;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border: 1px solid blue;
 
 }
@@ -160,11 +162,13 @@ border: 1px solid red;
 .trending{
   display: flex;
   border: 1px solid green;
+  margin-bottom: 0.25rem;
 }
 
 .trending_img{
 width: 35%;
 height: auto;
+padding: 1rem;
 
 }
 .trending_img img{
@@ -173,21 +177,185 @@ height: auto;
 }
 
 .trending_text{
-width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+
+}
+
+.trending_text h3{
+  padding-bottom: 0.5rem;
+
+}
+
+.trending_text p{
+  padding-bottom: 0.5rem;
+}
+
+.trending_text a{
 
 }
 
 /**/
                     /* Courses Styles */
 /**/
+.courses{
+  background-color: #F1F0F5;
+}
 
+.courses_headline{
+  background-color: #F1F0F5;
+  display: flex;
+}
 
+.courses_headline h1{
+  text-align: center;
+  margin: 2rem auto;
+}
 
+.course_grid{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
 
+.grid_item{
+  border: 1px solid blue;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 2rem;
+
+}
+
+.item_image{
+  border: 1px solid green;
+
+}
+
+.item_image img{
+max-width: 100%;
+height: auto;
+}
+
+.item_text{
+  border: 1px solid magenta;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.item_text h3{
+}
+
+.item_text span{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.item_text p{
+
+}
 
 /**/
                     /* Thesis Styles */
 /**/
+.thesis_headline{
+  display: flex;
+}
+
+.thesis_headline h1{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.thesis{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+
+
+
+.thesis_hero{
+width: 60%;
+display: flex;
+flex: 1;
+flex-direction: column;
+padding: 2rem 1.5rem;
+border: 1px solid red;
+}
+
+.thesis_hero_youtube{
+  background-color: grey;
+  width: 100%
+}
+
+.thesis_hero h1{
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thesis_hero span{
+  margin-bottom: 2rem;
+}
+
+.hero p{
+  margin-bottom: 2rem;
+}
+
+.thesis_trending_box{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+
+}
+
+.thesis_trending{
+  display: flex;
+  border: 1px solid green;
+  margin-bottom: 0.25rem;
+}
+
+.thesis_trending_img{
+width: 35%;
+height: auto;
+padding: 1rem;
+
+}
+.thesis_trending_img img{
+max-width: 100%;
+height: auto;
+}
+
+.thesis_trending_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+
+}
+
+.thesis_trending_text h3{
+  padding-bottom: 0.5rem;
+
+}
+
+.thesis_trending_text p{
+  padding-bottom: 0.5rem;
+}
+
 
 
 /**/
