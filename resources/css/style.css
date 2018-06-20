@@ -10,7 +10,9 @@ html{
   margin: 0 auto;
 }
 
-
+/*  font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
 
 
 /**/
@@ -37,9 +39,15 @@ z-index: 10;
 }
 
 .logo_title span{
+  font-family: 'Ubuntu', sans-serif;
   color: white;
   font-size: 1.5rem;
 
+}
+
+.logo_title span.bold{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
 }
 
 nav ul{
@@ -55,9 +63,14 @@ nav ul li{
 
 nav ul a{
   font-size: 1rem;
-  font-family: Helvetica;
+  font-family: 'Ubuntu', sans-serif;
   color: white;
   text-decoration: none;
+}
+
+nav ul a:hover{
+  color: #D78037;
+  text-decoration: underline;
 }
 
 
@@ -92,22 +105,35 @@ nav ul a{
 
 .banner_text h1{
   font-size: 2rem;
-
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #363636;
 }
 
 .banner_text h2{
   font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #363636;
   margin-top: 1.5rem;
 }
 
 .banner_text .button{
   background-color: #B1AFB2;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
   margin-top: 1.5rem;
+  margin-right: 1.5rem;
   padding: 0.5rem;
 
-}
 
+}
+.banner_text .button:hover{
+  background-color: #D78037;
+}
 
 
 
@@ -129,7 +155,6 @@ flex: 1;
 flex-direction: column;
 padding: 2rem 1.5rem;
 margin-top: 2rem;
-border: 1px solid red;
 }
 
 .hero img{
@@ -140,14 +165,23 @@ border: 1px solid red;
   font-size: 2rem;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #363636;
 }
 
 .hero span{
   padding: 2rem 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.2;
+  color: #B1AFB2;
 }
 
 .hero p{
-
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.2;
+  color: #B1AFB2;
 }
 
 .trending_box{
@@ -155,14 +189,16 @@ border: 1px solid red;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  border: 1px solid blue;
 
 }
 
 .trending{
   display: flex;
-  border: 1px solid green;
   margin-bottom: 0.25rem;
+}
+
+.trending:hover{
+  background-color: #F1F0F5;
 }
 
 .trending_img{
@@ -186,14 +222,25 @@ height: auto;
 
 .trending_text h3{
   padding-bottom: 0.5rem;
-
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #363636;
 }
 
 .trending_text p{
   padding-bottom: 0.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #B1AFB2;
+  padding-right: 0.5rem;
 }
 
 .trending_text a{
+  color: #D78037;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -212,10 +259,14 @@ height: auto;
 .courses_headline h1{
   text-align: center;
   margin: 2rem auto;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #363636;
 }
 
 .course_grid{
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -224,7 +275,6 @@ height: auto;
 }
 
 .grid_item{
-  border: 1px solid blue;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -234,7 +284,7 @@ height: auto;
 }
 
 .item_image{
-  border: 1px solid green;
+
 
 }
 
@@ -244,7 +294,6 @@ height: auto;
 }
 
 .item_text{
-  border: 1px solid magenta;
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
@@ -254,16 +303,28 @@ height: auto;
 }
 
 .item_text h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #363636;
 }
 
 .item_text span{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #B1AFB2;
 
 }
 
 .item_text p{
-
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #B1AFB2;
 }
 
 /**/
@@ -276,6 +337,11 @@ height: auto;
 .thesis_headline h1{
   text-align: center;
   margin: 2rem auto;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #363636;
 }
 
 .thesis{
@@ -291,41 +357,55 @@ display: flex;
 flex: 1;
 flex-direction: column;
 padding: 2rem 1.5rem;
-border: 1px solid red;
 }
 
 .thesis_hero_youtube{
-  border: 1px solid cyan;
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
+.thesis_hero_youtube img{
+  max-width: 100%;
+}
+
+
 .fa-youtube{
   color: darkgrey;
 }
 
-.thesis_hero h1{
+.thesis_hero h3{
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #363636;
 }
 
-.hero p{
+.thesis_hero p{
   margin-bottom: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.2;
+  color: #B1AFB2;
 }
 
 .thesis_trending_box{
   width: 40%;
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
   padding-top: 2rem;
 
 }
 
 .thesis_trending{
   display: flex;
-  border: 1px solid green;
   margin-bottom: 0.25rem;
+}
+
+.thesis_trending:hover{
+  background-color: #F1F0F5;
 }
 
 .thesis_trending_img{
@@ -349,11 +429,21 @@ height: auto;
 
 .thesis_trending_text h3{
   padding-bottom: 0.5rem;
-
+  padding-right: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #363636;
 }
 
 .thesis_trending_text p{
   padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #B1AFB2;
 }
 
 
@@ -364,20 +454,20 @@ height: auto;
 footer{
 display: flex;
 justify-content: space-between;
-border: 1px solid red;
+background-color: #B1AFB2;
+border-top: 1px solid #363636;
 padding-bottom: 2rem;
 }
 
 .copyright{
 display: flex;
-border: 1px solid green;
 padding-top: 1rem;
 padding-left: 1.5rem;
-
+font-family: 'Ubuntu', sans-serif;
+color: white;
 }
 
 .terms_privacy{
-border: 1px solid blue;
 
 }
 
@@ -394,5 +484,7 @@ border: 1px solid blue;
 
 .terms_privacy ul a{
   font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
   text-decoration: none;
 }
