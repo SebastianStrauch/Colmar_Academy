@@ -73,6 +73,39 @@ nav ul a:hover{
   text-decoration: underline;
 }
 
+/* responsive header styles */
+
+header .mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 740px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: initial;
+    width: 100%;
+  }
+
+  nav ul{
+    padding-top: 1.2rem;
+  }
+
+  nav ul li{
+    padding-left: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .logo_title span{
+    display: none;
+  }
+}
+
 
 /**/
                     /* Banner Styles */
@@ -135,6 +168,31 @@ nav ul a:hover{
   background-color: #D78037;
 }
 
+/* responsive banner styles */
+
+@media only screen and (max-width: 480px) {
+  .banner{
+    flex-direction: column;
+  }
+
+  .banner_image{
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+
+  .banner_text{
+    width: 100%;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .banner_text h2{
+    margin-top: 2rem;
+  }
+  .banner_text .button{
+    margin-top: 1.5rem;
+  }
+
+}
 
 
 /**/
