@@ -10,10 +10,6 @@ html{
   margin: 0 auto;
 }
 
-/*  font-family: 'Lato', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-*/
-
 
 /**/
                     /* Header Styles */
@@ -73,12 +69,11 @@ nav ul a:hover{
   text-decoration: underline;
 }
 
-/* responsive header styles */
+                    /* responsive header styles */
 
 header .mobile {
   display: none;
 }
-
 
 @media only screen and (max-width: 740px) {
   header .desktop {
@@ -97,7 +92,6 @@ header .mobile {
   nav ul li{
     padding-left: 2rem;
   }
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -161,16 +155,27 @@ header .mobile {
   margin-top: 1.5rem;
   margin-right: 1.5rem;
   padding: 0.5rem;
-
-
 }
+
 .banner_text .button:hover{
   background-color: #D78037;
 }
 
-/* responsive banner styles */
+                    /* responsive banner styles */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 740px){
+  .banner_text h1{
+    font-size: 1.5rem;
+  }
+
+  .banner_text h2{
+    font-size: 1rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 560px) {
   .banner{
     flex-direction: column;
   }
@@ -191,7 +196,6 @@ header .mobile {
   .banner_text .button{
     margin-top: 1.5rem;
   }
-
 }
 
 
@@ -247,7 +251,6 @@ margin-top: 2rem;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-
 }
 
 .trending{
@@ -279,7 +282,6 @@ height: auto;
   flex-direction: column;
   justify-content: center;
   width: 65%;
-
 }
 
 .trending_text h3{
@@ -303,10 +305,25 @@ height: auto;
 .trending_text a{
   color: #D78037;
   font-family: 'Ubuntu', sans-serif;
-
 }
 
-/* responsive feature styles */
+                    /* responsive feature styles */
+
+@media only screen and (max-width: 720px){
+  .hero h1{
+    font-size: 1.5rem;
+  }
+
+  .trending_text p#mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .hero p{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 480px){
   .hero{
@@ -339,11 +356,7 @@ height: auto;
     margin: 0 1rem 2rem 1rem;
     padding: 0 1rem;
   }
-
-
 }
-
-
 
 
 /**/
@@ -382,12 +395,6 @@ height: auto;
   flex-direction: column;
   width: 30%;
   margin-bottom: 2rem;
-
-}
-
-.item_image{
-
-
 }
 
 .item_image img{
@@ -419,7 +426,6 @@ height: auto;
   font-size: 1rem;
   line-height: 1.2;
   color: #B1AFB2;
-
 }
 
 .item_text p{
@@ -429,11 +435,30 @@ height: auto;
   color: #B1AFB2;
 }
 
-/* responsive courses styles */
+                    /* responsive courses styles */
 
+@media only screen and (max-width: 740px){
+  .grid_item{
+    width: 40%;
+  }
+
+  .course_grid{
+    justify-content: space-around;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .item_text span{
+    display: none;
+  }
+
+  .item_text p{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 480px){
-
   .course_grid{
     flex-direction: column;
     margin: 0 1rem;
@@ -469,9 +494,6 @@ height: auto;
   }
 
 }
-
-
-
 
 
 /**/
@@ -516,7 +538,6 @@ padding: 2rem 1.5rem;
   max-width: 100%;
 }
 
-
 .fa-youtube{
   color: darkgrey;
 }
@@ -543,7 +564,6 @@ padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-
 }
 
 .thesis_trending{
@@ -559,8 +579,8 @@ padding: 2rem 1.5rem;
 width: 35%;
 height: auto;
 padding: 1rem;
-
 }
+
 .thesis_trending_img img{
 max-width: 100%;
 height: auto;
@@ -571,7 +591,6 @@ height: auto;
   flex-direction: column;
   justify-content: center;
   width: 65%;
-
 }
 
 .thesis_trending_text h3{
@@ -594,7 +613,18 @@ height: auto;
 }
 
 
-/* responsive courses styles */
+                    /* responsive thesis styles */
+
+@media only screen and (max-width: 740px){
+  .thesis_trending_text p{
+    display: none;
+  }
+
+  .thesis_trending_text h3{
+    font-size: 1rem;
+  }
+}
+
 
 @media only screen and (max-width: 480px){
   .thesis{
@@ -621,8 +651,8 @@ height: auto;
   .thesis_hero_youtube{
     margin-bottom: 1.5rem;
   }
-
 }
+
 
 /**/
                     /* Footer Styles */
@@ -641,10 +671,6 @@ padding-top: 1rem;
 padding-left: 1.5rem;
 font-family: 'Ubuntu', sans-serif;
 color: white;
-}
-
-.terms_privacy{
-
 }
 
 .terms_privacy ul{
@@ -666,7 +692,7 @@ color: white;
 }
 
 
-/* responsive courses styles */
+                    /* responsive footer styles */
 
 @media only screen and (max-width: 480px){
   .terms_privacy{
