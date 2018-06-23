@@ -594,6 +594,35 @@ height: auto;
 }
 
 
+/* responsive courses styles */
+
+@media only screen and (max-width: 480px){
+  .thesis{
+    flex-direction: column;
+  }
+
+  .thesis_trending_box{
+    display: none;
+  }
+
+  .thesis_hero{
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis_hero h3{
+    display: none;
+  }
+
+  .thesis_hero p{
+    display: none;
+  }
+
+  .thesis_hero_youtube{
+    margin-bottom: 1.5rem;
+  }
+
+}
 
 /**/
                     /* Footer Styles */
@@ -634,4 +663,23 @@ color: white;
   font-family: 'Ubuntu', sans-serif;
   color: white;
   text-decoration: none;
+}
+
+
+/* responsive courses styles */
+
+@media only screen and (max-width: 480px){
+  .terms_privacy{
+    display: none;
+  }
+
+  footer{
+    padding: 0;
+  }
+
+  .copyright{
+    padding: 0;
+    margin: 1rem auto;
+  }
+
 }
