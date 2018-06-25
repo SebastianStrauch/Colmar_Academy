@@ -534,8 +534,9 @@ padding: 2rem 1.5rem;
   display: flex;
 }
 
-.thesis_hero_youtube img{
+.thesis_hero_youtube .video{
   max-width: 100%;
+  height: auto;
 }
 
 .fa-youtube{
